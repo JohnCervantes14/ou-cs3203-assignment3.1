@@ -33,7 +33,7 @@ public class Main {
 			System.out.print(reversed[i] + " ");
 		}
 	}
-
+//add the contents of an array together
 	public static int ListSum(int[] array1) {
 		int sum = 0;
 		for(int i = 0; i < array1.length; ++i) {
@@ -41,7 +41,7 @@ public class Main {
 		}
 		return sum;
 	}
-	
+//multiplies the contents of an array together
 	public static int Multiply(int[] list) {
 		int product = 1;
 		for(int i = 0; i < list.length; ++i) {
