@@ -40,4 +40,14 @@ public class Main {
 		}
 		return product;
 	}
+	
+	public static int[] Reverse(int[] toReverse) {
+		int[] result = new int[toReverse.length];
+		
+		for(int i = 0; i < result.length; ++i) {
+			result[i] = toReverse[toReverse.length-1-i];
+		}
+		
+		return result;
+	}
 }
