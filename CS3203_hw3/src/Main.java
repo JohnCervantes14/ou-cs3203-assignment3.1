@@ -1,7 +1,30 @@
+import java.util.Scanner;
 
 public class Main {
 	
-	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+				
+		int[] toAdd = new int[5];
+		int[] toMultiply = new int[5];
+
+		System.out.println("Enter 5 numbers to add");
+		for(int i = 0; i < 5; ++i) {
+			toAdd[i] = input.nextInt();
+		}
+		
+		System.out.println("Enter 5 numbers to multiply");
+		for(int i = 0; i < 5; ++i) {
+			toMultiply[i] = input.nextInt();
+		}
+		
+		int sum = ListSum(toAdd);
+		int product = Multiply(toMultiply);
+		
+		System.out.println("Sum: " + sum + " Product: " + product );
+		
+	}
+
 	public static int ListSum(int[] array1) {
 		int sum = 0;
 		for(int i = 0; i < array1.length; ++i) {
